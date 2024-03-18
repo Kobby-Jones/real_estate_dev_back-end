@@ -1,4 +1,5 @@
 from django.db import models
+from agents.models import Agent
 
 class Properties(models.Model):
     TYPE_CHOICES = [
