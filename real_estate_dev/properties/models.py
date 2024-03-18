@@ -16,7 +16,7 @@ class Properties(models.Model):
     bathRooms = models.PositiveIntegerField()
     address = models.CharField(max_length=255)
     agent = models.ForeignKey(Agent, on_delete=models.CASCADE)
-    is_for_rent = models.BooleanField(default=True)  # True if the property is for rent, False if it's for sale
+    is_for_rent = models.BooleanField(default=True) 
     description = models.TextField()
 
     def __str__(self):
